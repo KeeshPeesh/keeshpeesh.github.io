@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  p, button {
+    font-family: Inconsolata, Arial, Helvetica, sans-serif;
+  }
+  
+  /* Calculator Container */
+  .calculator {
+    width: 600px;
+    background-color: #80868b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #00000033;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Results */
+  #result {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(223, 234, 247);
+    color: black;
+  }
+  
+  /* Equals Button */
+  #equal {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    height: 100px;
+    transition: 0.3s ease;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 8;
+  }
+  
+  /* Equals Hover */
+  #equal:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1);
+  }
+  
+  /* Buttons Container */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #383a3b;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+    border: none;
+  }
+  
+  /* Hover Effects for Buttons */
+  button:hover {
+    background-color: #303035;
+    transform: scale(1.1);
+  }
+  
+  /* Clear Button */
+  #clear {
+    background-color: #ec0f0f;
+    color: #fff;
+    border: none;
+  }
+  
+  #clear:hover {
+    background-color: #b90e0e;
+  }
+  
+  /* Backspace Button */
+  #backspace {
+    background-color: #eb5858;
+    color: black;
+    border: none;
+  }
+  
+  #backspace:hover {
+    background-color: #e72121;
+    color: black;
+  }
+  /* Num buttons only */
+  .number {
+    background-color: #142F44;
+  }
+  
+  .number:hover {
+    background-color: #131e27;
+  }
+  
+  /* Secret */
+  .sec {
+    display: none;
+    text-align: center;
+    background-color: #979393;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    z-index: 4;
+    transition: transform 0.5s ease;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  
+  header a:hover {
+    transform: scale(1.5);
+  }
